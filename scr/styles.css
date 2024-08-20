@@ -1,0 +1,81 @@
+*{
+    box-sizing: border-box; 
+    font-family: Gabarito;
+}
+body{
+    background-color: #FDF4ED;
+}
+@font-face {
+    font-family: Gabarito;
+    src: url("/font/Gabarito-Regular.ttf");
+}
+h1{
+    margin: 25px;
+}
+button{
+    padding: 15px 20px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 5px;
+    border-color: #242BA0;
+}
+.more{
+    padding: 10px 15px;
+    text-align: center;
+    font-size: 12px;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 5px;
+    border-color: #8883C3;
+    background-color: #D3D1E9;
+    
+}
+li{
+    list-style: none;
+    font-size: 20px;
+    padding: 10px;
+    
+}
+/*.card h1{
+    text-align: center;
+}*/
+.album{
+    width: 440px;
+    margin: 25px;
+    padding: 10px;
+    background-color: #D3D1E9;
+    display: inline-block;
+    border-radius: 8px;
+}
+.album h1{
+    text-align: center;
+}
+.photo{
+    max-width: 100%;
+}
+.rec{
+    width: 440px;
+    margin: 25px;
+    padding: 10px;
+    background-color: #D3D1E9;
+    display: inline-block;
+    border-radius: 15px;
+}
+
+.b_artes{
+    padding: 10px;
+    margin: 25px;
+    background-color: #D3D1E9;
+    border-radius: 15px;
+}
+.pic img{
+    width: 500px;
+    display: block;
+    margin: auto;
+}
+footer{
+    text-align: center;
+}
+
