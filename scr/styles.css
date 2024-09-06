@@ -1,81 +1,281 @@
-*{
-    box-sizing: border-box; 
-    font-family: Gabarito;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Barlow Semi Condensed", sans-serif;
 }
-body{
-    background-color: #FDF4ED;
-}
+
 @font-face {
-    font-family: Gabarito;
-    src: url("/font/Gabarito-Regular.ttf");
+    font-family: Barlow-medium;
+    src: url(/scr/tipografias/BarlowCondensed-Medium.ttf);
 }
-h1{
-    margin: 25px;
+
+:root {
+    --blanco: #F6F6F4;
+    --gris-claro: #DFDFE2 ;
+    --gris: #383538;
+    --negro: #242124;   
 }
-button{
-    padding: 15px 20px;
-    text-align: center;
-    font-size: 16px;
-    cursor: pointer;
-    border: 2px solid black;
-    border-radius: 5px;
-    border-color: #242BA0;
+body {
+    background-color: var(--blanco);
 }
-.more{
-    padding: 10px 15px;
-    text-align: center;
-    font-size: 12px;
-    cursor: pointer;
-    border: 2px solid black;
-    border-radius: 5px;
-    border-color: #8883C3;
-    background-color: #D3D1E9;
-    
+.contenedor {
+    width: 80%;
+    margin: 0px auto;
 }
-li{
+/*MENU*/
+.menu ul {
+    width: 80%;
+    display: flex;
+    padding: 4px 40px;
+    margin: 0 auto;
     list-style: none;
-    font-size: 20px;
-    padding: 10px;
-    
+    border: 2px solid var(--negro);
+    border-radius: 50px;
+    justify-content: space-between;
 }
-/*.card h1{
-    text-align: center;
-}*/
-.album{
-    width: 440px;
-    margin: 25px;
-    padding: 10px;
-    background-color: #D3D1E9;
-    display: inline-block;
-    border-radius: 8px;
-}
-.album h1{
-    text-align: center;
-}
-.photo{
-    max-width: 100%;
-}
-.rec{
-    width: 440px;
-    margin: 25px;
-    padding: 10px;
-    background-color: #D3D1E9;
-    display: inline-block;
-    border-radius: 15px;
-}
-
-.b_artes{
-    padding: 10px;
-    margin: 25px;
-    background-color: #D3D1E9;
-    border-radius: 15px;
-}
-.pic img{
-    width: 500px;
+/*BOTONES DEL MENU*/
+.contenedor .menu ul li a {
     display: block;
-    margin: auto;
+    padding: 10px;
+    color: var(--negro);
+    text-decoration: none;
+    text-align: center;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 500;
 }
-footer{
+
+.contenedor .menu ul li a:hover {
+    background-color: var(--negro);
+    color: var(--blanco);
+    border-radius: 50px;
+    padding: 10px;
+}
+/*BOTONES GENERALES para todos los apartados ul Y li*/
+.botones {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+}
+.botones li a {
+    display: block;
+    padding: 8px 20px;
+    color: var(--negro);
+    text-decoration: none;
+    text-align: center;
+    border: 2px solid var(--negro);
+    border-radius: 50px;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 500;
+}
+.botones li a:hover {
+    background-color: var(--negro);
+    color: var(--blanco);
+    border-radius: 50px;
+}
+
+/*CONTENIDO-MAIN*/
+.section {
+    width: 100%;
+}
+.titulo {
+    width: 300px;
+    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    text-align: center;
+    margin: 30px 0 30px 0px;
+}
+section h1:nth-child(1),
+h1:nth-child(2),
+h1:nth-child(3),
+h1:nth-child(4),
+h1:nth-child(5) {
+    font-size: 35px;
+    font-family: Barlow-medium, sans-serif;
+    color: var(--negro);
+    text-shadow: 0 30px 0 rgb(56, 53, 56, 0.9), 0 60px 0 rgb(56, 53, 56, 0.8), 0 90px 0 rgb(56, 53, 56, 0.7), 0 120px 0 rgb(56, 53, 56, 0.6), 0 150px 0 rgb(56, 53, 56, 0.5),
+        0 180px 0 rgb(56, 53, 56, 0.4), 0 210px 0 rgb(56, 53, 56, 0.3), 0 240px 0 rgb(56, 53, 56, 0.2), 0 270px 0 rgb(56, 53, 56, 0.1), 0 300px 0 rgb(56, 53, 56, 0.05);
+}
+.wrapper {
+    display: flex;
+    justify-content: flex-end;
+}
+.main-text {
+    width: 50%;
+}
+/*TITULOS GENERALES*/
+h2 {
+    font-size: 400px;
+    font-family: Barlow-medium, sans-serif;
+    letter-spacing: -15px;
+    color: var(--negro);
+    text-align: center;
+    text-shadow: 0 15px 0 rgb(56, 53, 56, 0.25), 0 30px 0 rgb(56, 53, 56, 0.2), 0 45px 0 rgb(56, 53, 56, 0.15), 0 60px 0 rgb(56, 53, 56, 0.1), 0 75px 0 rgb(56, 53, 56, 0.05);
+}
+h3 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 40px;
+    font-family: "Barlow Semi Condensed", system-ui;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: 0 8px 0 rgb(56, 53, 56, 0.25), 0 16px 0 rgb(56, 53, 56, 0.2), 0 24px 0 rgb(56, 53, 56, 0.15), 0 32px 0 rgb(56, 53, 56, 0.1), 0 40px 0 rgb(56, 53, 56, 0.05);
+}
+h4 {
+    
+    font-family: "Barlow Semi Condensed", system-ui;
+    font-weight: 700;
+    font-size: 28px;
+    margin: 0px 0 20px 0;
+}
+h5 {
+    font-size: 22px;
+    font-family: "Barlow Semi Condensed", system-ui;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+/*SECCION DE CONTENIDO IMG - TEXT GENERAL*/
+.content {
+    width: 900px;
+    margin: 20px auto;
+    padding: 40px;
+    border: 2px solid var(--negro);
+    background-color: var(--gris-claro);
+}
+.photo {
+    max-width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    margin-right: 50px;
+}
+
+.art {
+    display: flex;
+    margin-bottom: 20px;
+}
+section .art div p {
+    text-align: left;
+    font-family: "Barlow Semi Condensed", system-ui;
+    font-weight: 400;
+    font-size: 18px;
+    width: 90%;
+    overflow: hidden;
+}
+
+.content .recomendaciones {
+    margin-left: 311px;
+}
+
+.recomendaciones .links div {
+    margin-right: 30px;
+}
+
+.links {
+    display: flex;
+}
+
+div .links p {
+    text-align: left;
+    display: inline-block;
+    font-size: 16px;
+    font-family: "Barlow Semi Condensed", system-ui;
+    font-weight: 400;
+}
+
+.links a {
+    justify-content: center;
+    align-content: center;
+    text-decoration: none;
+    font-size: 16px;
+    border: 2px solid var(--negro);
+    border-radius: 50px;
+    font-family: sans-serif;
+    text-align: center;
+    color: var(--negro);
+    margin-bottom: 15px;
+}
+
+section .wrapper-content .content .links a {
+    display: flex;
+    padding: 6px 10px;
+    text-align: center;
+    font-family: "Barlow Semi Condensed", system-ui;
+    font-weight: 500;
+}
+
+a:hover {
+    background-color: var(--gris);
+    color: var(--blanco);
+}
+/*MENU PARA SUBSECCIONES*/
+.secciones {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(2,1fr);
+    gap: 8px;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.secciones .seccion {
     text-align: center;
 }
 
+.seccion h2 {
+    font-size: 160px;
+    letter-spacing: 0;
+    text-shadow: 0 10px 0 rgb(56, 53, 56, 0.25), 0 25px 0 rgb(56, 53, 56, 0.2), 0 40px 0 rgb(56, 53, 56, 0.15), 0 55px 0 rgb(56, 53, 56, 0.1), 0 75px 0 rgb(56, 53, 56, 0.05);
+
+}
+
+.seccion p {
+    font-size: 18px;
+    font-family: "Barlow Semi Condensed", system-ui;
+    font-weight: 400;
+    padding: 50px 0;
+
+}
+
+.seccion a {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--negro);
+    border: 2px solid var(--negro);
+    border-radius: 50px;
+    padding: 8px 20px;
+}  
+.seccion a:hover {
+    background-color: var(--gris);
+    color: var(--blanco);
+}
+/*IMAGENES EN 2 COLUMNAS*/
+.image-content {
+    width: 900px;
+    margin: 20px auto;
+    padding: 35px;
+    border: 2px solid var(--negro);
+    background-color: var(--gris);
+}
+.image-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.image-content img {
+    max-width: 100%;
+    max-height: 500px;
+}
+
+figure {
+    padding: 15px;
+    justify-content: center;
+    color: var(--blanco);
+}
+
+figcaption {
+    text-align: center;
+}
