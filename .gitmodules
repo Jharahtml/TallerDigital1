@@ -4,3 +4,6 @@
 [submodule "src/ejercicios_maquetacion"]
 	path = src/ejercicios_maquetacion
 	url = git@github.com:Jharahtml/ejercicios_maquetacion.git
+[submodule "src/mondrian"]
+	path = src/mondrian
+	url = git@github.com:Jharahtml/mondrian.git
