@@ -1,0 +1,6 @@
+[submodule "ejercicios_maquetacion"]
+	path = ejercicios_maquetacion
+	url = git@github.com:Jharahtml/ejercicios_maquetacion.git
+[submodule "src/ejercicios_maquetacion"]
+	path = src/ejercicios_maquetacion
+	url = git@github.com:Jharahtml/ejercicios_maquetacion.git
